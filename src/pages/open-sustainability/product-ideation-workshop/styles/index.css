@@ -1,0 +1,146 @@
+:root {
+  --color-primary: #1b014c;
+  --color-body: #fff;
+  --color-bg-featured-label: #ffd23f;
+}
+
+@layer base {
+
+  button {
+    border: 0;
+    outline: 0;
+  }
+
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media only screen and (min-width: 1300px) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  /*box model*/
+  /*background*/
+  /*layout*/
+  /*type*/
+  /*other,  in alphabetical order*/
+ 
+
+  /*CALL TO ACTION COMPONENT*/
+  #cta {
+    text-align: center;
+    margin: 4% auto;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  /*gridDISPLAY COMPONENT*/
+  section#gridDisplay {
+    /*box model*/
+    margin: 8% auto;
+    padding: 0 10%;
+    /*layout*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    section#gridDisplay {
+      flex-direction: column;
+    }
+  }
+
+  /*VIDEO COMPONENT*/
+  .video-background {
+    background: url("../assets/animated_map/map.gif") no-repeat center;
+    background-size: cover;
+  }
+
+  /*PROPS*/
+  .doNotDisplay {
+    display: none;
+  }
+
+  .gridDisplayOrder {
+    flex-direction: row-reverse;
+  }
+
+  .flexDisplay {
+    /*box model*/
+    padding: 0 8%;
+    /*layout*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .flexDisplay {
+      flex-direction: column;
+    }
+  }
+
+  /*PRODUCT COMPONENT*/
+  .product-photo {
+    background-size: 100% 100%;
+  }
+
+  .product-photo-1 {
+    background: url("../assets/Self_Pace.svg") no-repeat center;
+  }
+
+  .product-photo-2 {
+    background: url("../assets/Workshop_Oriented.svg") no-repeat center;
+  }
+
+  .product-photo-3 {
+    background: url("../assets/Modules.svg") no-repeat center;
+  }
+
+  /*TESTIMONIALS COMPONENTS*/
+  blockquote:before {
+    /*box model*/
+    margin-right: 25%;
+    content: open-quote;
+    /*layout*/
+    vertical-align: -0.6em;
+    /*type*/
+    font-size: 6em;
+    line-height: 0;
+    color: #ccc;
+  }
+
+  blockquote:after {
+    /*box model*/
+    margin-left: 15%;
+    content: close-quote;
+    /*layout*/
+    vertical-align: -0.6em;
+    /*type*/
+    font-size: 6em;
+    line-height: 0;
+    color: #ccc;
+  }
+
+  /* iframe {
+
+    margin: 5% auto;
+    width: 80vw;
+    height: 40vh;
+    overflow: hidden;
+  } */
+
+  *:focus {
+    outline: none;
+    outline: 0;
+  }
+}
+

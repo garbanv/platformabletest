@@ -1,0 +1,140 @@
+:root {
+  --color-primary: #1b014c;
+  --color-body: #fff;
+  --color-bg-featured-label: #ffd23f;
+}
+
+/*CALL TO ACTION COMPONENT*/
+.bg-card {
+  background-color: #fafafa;
+}
+.bg-primary {
+  background-color: var(--color-primary);
+}
+.bg-secondary {
+  background-color: var(--color-bg-featured-label);
+}
+
+button:focus {
+  outline: none;
+}
+
+.btn--purple {
+  background: #9c9cd5;
+}
+
+.btn--pink {
+  background: rgb(233, 197, 183);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 197, 183, 1) 0%,
+    rgba(245, 224, 198, 1) 49%,
+    rgba(224, 168, 145, 1) 100%
+  );
+}
+
+.btn--silver {
+  background: rgb(204, 209, 211);
+  background: linear-gradient(
+    90deg,
+    rgba(204, 209, 211, 1) 0%,
+    rgba(239, 234, 228, 1) 31%,
+    rgba(206, 213, 226, 1) 100%
+  );
+}
+
+.btn--gold {
+  background: rgb(213, 195, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(213, 195, 123, 1) 0%,
+    rgba(248, 228, 203, 1) 51%,
+    rgba(222, 210, 155, 1) 100%
+  );
+}
+
+/*PRODUCT CARDS COMPONENT*/
+.product-photo-1 {
+  background: url("../assets/cards_understand_the_open_banking _platform_economy.svg")
+    no-repeat center;
+}
+
+.product-photo-2 {
+  background: url("../assets/cards_see_where_opportunities _are_emerging.svg")
+    no-repeat center;
+}
+
+.product-photo-3 {
+  background: url("../assets/cards_understand_the_open_banking _platform_economy.svg")
+    no-repeat center;
+}
+
+/*TEAM COMPONENT*/
+.team-section {
+  border: 1px solid #cccccc;
+}
+
+.team-section p {
+  color: #404040;
+}
+
+.team-section span {
+  color: #ccc;
+}
+
+/*SUBSCRIPTION COMPONENT*/
+.subscription-section ul {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .subscription-section ul {
+    text-align: left;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid #1b014c40;
+}
+
+.plans-price {
+  padding-top: 1.5rem;
+  border-top: 1px solid #1b014c40;
+}
+
+/*TESTIMONIALS COMPONENTS*/
+blockquote:before {
+  /*box model*/
+  margin-right: 25%;
+  content: open-quote;
+  /*layout*/
+  vertical-align: -0.6em;
+  /*type*/
+  font-size: 6em;
+  line-height: 0;
+  color: #ccc;
+}
+
+blockquote:after {
+  /*box model*/
+  margin-left: 15%;
+  content: close-quote;
+  /*layout*/
+  vertical-align: -0.6em;
+  /*type*/
+  font-size: 6em;
+  line-height: 0;
+  color: #ccc;
+}
+
+/* iframe {
+
+    margin: 5% auto;
+    width: 80vw;
+    height: 40vh;
+    overflow: hidden;
+  } */
+
+*:focus {
+  outline: none;
+  outline: 0;
+}
