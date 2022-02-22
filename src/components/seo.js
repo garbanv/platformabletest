@@ -29,7 +29,7 @@
    const metaDescription = description || site.siteMetadata.description
    const defaultTitle = site.siteMetadata?.title
    const siteUrl = site.siteMetadata?.siteUrl
- console.log("siteUrl",siteUrl)
+
    return (
      <Helmet
        htmlAttributes={{
@@ -38,30 +38,44 @@
        title={title}
        titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
        meta={[
-         {
+        {
+          name: `title`, content: title,
+        },
+        {
+          name: `image`, content: img,
+        },
+        {
            name: `description`, content: `We measure the value of open ecosystems`,
          },
-         {
-           name:"title", property: `og:title`,content: title,
-         },
-         {
-           property: `og:description`,content: `We measure the value of open ecosystems`,
-         },
+        
+         
          {
            property: `og:type`,content: `website`,
          },
 
          { property: "og:url", content:siteUrl },
- 
          {
-           name:"image", property: "og:image",content:img,
+          property: `og:title`,content: title,
+          },
+          {
+           property: `og:description`,content: `We measure the value of open ecosystems`,
          },
+         {
+           property: "og:image",content:img,
+         },
+
+
          {
            name:"author", content:"https://platformable.com"
          },
+
+
          {
            name: `twitter:card`,content: `summary_large_image`,
          },
+         {
+          name: `twitter:url`,content: `@mgboydcom`,
+        },
          {
            name: `twitter:creator`,content: site.siteMetadata?.author || ``,
          },
@@ -74,9 +88,6 @@
          {
            name:"twitter:image",content:img
          },
-         {
-          name:"twitter:site",content:"https://platformable.com"
-        },
        ].concat(meta)}
      />
    )
