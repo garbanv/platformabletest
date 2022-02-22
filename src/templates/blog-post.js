@@ -142,7 +142,32 @@ const BlogPost = ({ data, pageContext, location }) => {
 
   return (
     <>
-    <SEO title={data.strapiPost.title} img={imgAsolutePath} />
+
+    <Helmet>
+    <title>{seoTitle}</title>
+      <link rel="canonical" href="http://www.platfprmable.com" />
+
+      {/* Primary Meta Tags */}
+      <meta name="title" content={data.strapiPost.title} />
+      <meta name="description" content="we measure open ecosystems" />
+      <meta name="image" content={imgAsolutePath} />
+
+
+      {/* Open Graph / Facebook  */}
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="http://www.platfprmable.com" />
+      <meta property="og:title" content={data.strapiPost.title} />
+      <meta property="og:description" content="we measure open ecosystems" />
+      <meta property="og:image" content={imgAsolutePath} />
+
+      {/* Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content="http://www.platfprmable.com" />
+      <meta name="twitter:title" content={data.strapiPost.title} />
+      <meta name="twitter:description" content="we measure open ecosystems" />
+      <meta name="twitter:image" content={imgAsolutePath} />
+
+</Helmet>
       <Layout>
         <section className="container mx-auto py-5 sm:mx-auto md:px-0 px-5">
           <div className=" px-0 md:px-3 lg:px-0 xl:px-3">
