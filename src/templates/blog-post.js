@@ -142,6 +142,7 @@ const BlogPost = ({ data, pageContext, location }) => {
 
   return (
     <>
+    <SEO title={data.strapiPost.title} img={imgAsolutePath} />
       <Layout>
         <section className="container mx-auto py-5 sm:mx-auto md:px-0 px-5">
           <div className=" px-0 md:px-3 lg:px-0 xl:px-3">
@@ -161,7 +162,7 @@ const BlogPost = ({ data, pageContext, location }) => {
           </div>
         </section>
    
-        <SEO title={data.strapiPost.title} img={imgAsolutePath} />
+        
         <section className="posts-container mx-auto all-blog-content my-5 sm:my-20 px-5">
           <h3 className="text-3xl sm:text-3xl font-black mb-3">
             {data.strapiPost.title}

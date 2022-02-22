@@ -47,7 +47,6 @@ const getTypeOfComponent = (section,index)=> {
 
 
 
-    console.log("data",data)
   return (
     <Layout>
       <SEO title={data.title} img={data?.feature_image?.url}/>
