@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL:`https://websiteserver-ds7cf.ondigitalocean.app`,
-        //apiURL: `http://localhost:1337`,
+        //apiURL:`https://websiteserver-ds7cf.ondigitalocean.app`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 5000,
         contentTypes: [`post`, `category`,`user`,`tag`,`page`,`os-trends`],
         singleTypes: [`homepage`,`about`],    
